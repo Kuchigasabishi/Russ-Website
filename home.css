@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inconsolata";
+    text-decoration: none;
+}
+
+i {
+    color: black;
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo1 {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 80px;
+    cursor: pointer;
+}
+
+hr.line{
+    margin: 10px auto;
+    width: 60%;
+}
+
+.link {
+    color: black;
+}
+
+.nav {
+    font-size: 1vw;
+    text-align: center;
+}
+
+.socmed {
+    text-align: center;
+    margin-left: 30px;
+}
+
+ul.nav {
+    text-align: center;
+    margin: 10px auto;
+    list-style: none;
+}
+
+ul.socmed {
+    text-align: center;
+    margin: 10px auto;
+    list-style: none;
+}
+
+
+li {
+    font-weight: bold;
+    display: inline-block;
+    padding: 0px 15px;
+    color: black;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: black;
+    transition: width 1s;
+}
+
+.link:hover::after {
+    width: 100%;
+    transition: width 1s;
+}
+
+.home {
+    position: relative;
+    margin: 50px 0;
+    width: 100%;
+    height: 800px;
+}
+
+#myVideo {
+    position: relative;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+}
+
+.content {
+    text-align: justify;
+    position: absolute;
+    top: 10%;
+    width: 50%;
+    font-size: 2vw;
+    padding: 20px 40px;
+    color: white;
+}
+
+#myBtn {
+    margin: 20px 0;
+    width: 50%;
+    font-size: 2vw;
+    padding: 20px 20px;
+    border: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#myBtn:hover {
+    background: black;
+    color: white;
+}
+
+#home1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 500px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 60%;
+    height: 500px;
+    background:rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    animation: appear 4s;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+h1.home {
+    font-weight: bold;
+    font-size: 2vw;
+    margin: 5px 0;
+    animation: float 4s;
+}
+
+h2.home {
+    font-weight: bold;
+    font-size: 2vw;
+    animation: float 4s;
+}
+
+@keyframes float {
+    from {transform: translateY(100px);}
+    to {transform: translateY(0);}
+}
+
+.spotify {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+    padding-top: 50px;
+}
+
+p.written {
+    font-size: 3vw;
+}
+
+h1.RUSS {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15vw;
+    font-weight: 1000;
+    letter-spacing: 30px;
+    background: url(bg.jpg) 50% 50%;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.playlist {
+    margin: 50px 0;
+}
+
+iframe.playlist {
+    width: 40%;
+    height: 600px;
+}
+
+.bookpromo {
+    margin: 50px 0;
+    text-align: center;
+}
+
+h1.sold {
+    font-family: "Montserrat", sans-serif;
+    color: #f3e705;
+    font-weight: 1000;
+    font-size: 6vw;
+}
+
+h2.bestseller {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 2vw;
+}
+
+.bookcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book {
+    position: relative;
+    margin: 50px 0;
+    top: 0;
+    width: 400px;
+    height: 600px;
+    background-image: url("cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-37.5deg) skewX(10deg);
+    box-shadow: -50px 35px 50px rgba(0,0,0,1);
+    transition: .5s;
+}
+
+.book:hover {
+    transform: rotate(-37.5deg) skewX(10deg) translate(30px, -30px);
+    box-shadow: -50px 35px 50px rgba(0,0,0,1);
+}
+
+.book:before {
+    content: '';
+    width: 30px;
+    height: 100%;
+    background: #f3e705;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewY(-45deg) translate(-30px, -15px);
+    box-shadow: inset -10px 0 20px rgba(0,0,0,0.2);
+}
+
+.book:after {
+    content: '';
+    width: 100%;
+    height: 30px;
+    background: #f3e705;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: skewX(-45deg) translate(15px,30px);
+}
+
+footer {
+    margin-top: 500px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1vw;
+}
+
+
